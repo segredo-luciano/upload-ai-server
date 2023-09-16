@@ -27,11 +27,11 @@ Content-Type: application/json
 ###
 
 # @name generate-ai-completion
-POST http://localhost:3333/ai/generate
+POST http://localhost:3333/ai/complete
 Content-Type: application/json
 
 {
     "videoId": "519ce721-f990-4649-b2d6-9c948b34354b",
     "temperature": 0.5,
-    "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
+    "prompt": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
 }
